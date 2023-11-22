@@ -23,6 +23,7 @@ function renderObj(position) {
         function generateRandomAnswers() {
             const answers = [...obj.incorrectAnswers, obj.correctAnswer];
             const shuffledAnswers = shuffleArray(answers);
+            console.log('shuffleArray',shuffledAnswers);
             
             shuffledAnswers.forEach(answer => {
                 const answerRes = `<button class="answer-button"><p>${answer}</p></button>`;
